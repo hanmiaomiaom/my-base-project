@@ -1,13 +1,16 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div>
+       <cube-rate v-model="value"></cube-rate>
+    </div>
 </template>
+
 <script>
 export default {
-    components: {},
+    name: '',
     data () {
-        return {};
+        return {
+            value:3,
+        };
     },
     filters: {},
     computed: {},
@@ -15,14 +18,7 @@ export default {
     methods: {}
 };
 </script>
+
 <style type='text/scss' lang='scss' scoped>
-#app{
-    height: 100%;
-    width: 100%;
-}
-</style>
-<style>
-#app{
-    font-size: 16PX;
-}
+
 </style>

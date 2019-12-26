@@ -1,0 +1,48 @@
+.view-height100 {
+    height: 100%;
+}
+.view-position {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 5;
+}
+.view-position-fixed {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 6;
+}
+.view-position-abs {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* height: 100%; */
+  bottom: 0;
+  z-index: 6;
+}
+.view-position-rel {
+  background: #fff;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: 6;
+}
+
+.ffM {
+    font-family: 'PingFangSC-Medium';
+}
+.ffR {
+    font-family: 'PingFangSC-Regular';
+}
