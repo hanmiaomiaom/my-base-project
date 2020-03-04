@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     "no-console": 'off',
     "no-debugger": 'off',
-    "indent": [2, 4],
+    // "indent": [2, 4],
     "comma-dangle":"off",
     "max-len":"off",
     "no-param-reassign":"off",
