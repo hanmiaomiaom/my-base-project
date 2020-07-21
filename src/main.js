@@ -6,17 +6,19 @@ import './common/scss/index.scss';
 import App from './App.vue';
 import router from './router';
 import store from './store';
+import mixin from './mixin';
 // import axios from 'axios';
 
+Vue.mixin(mixin);
 // 移动端移动点击延时
 document.addEventListener('DOMContentLoaded', () => {
-    FastClick.attach(document.body);
+  FastClick.attach(document.body);
 }, false);
 
 Vue.config.productionTip = false;
 
 new Vue({
-    router,
-    store,
-    render: h => h(App)
+  router,
+  store,
+  render: h => h(App)
 }).$mount('#app');

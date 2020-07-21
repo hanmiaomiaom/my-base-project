@@ -28,6 +28,9 @@
         <div class="footer">
             技术支持:中国石油管道公司信息中心
         </div>
+        <div class="qxz-error-text" v-if="qxzIsErrorText">
+            {{qxzErrorText}}
+        </div>
     </div>
 </template>
 
@@ -41,7 +44,16 @@ export default {
     },
     filters: {},
     computed: {},
-    mounted() { },
+    mounted() {
+        // this.ShowToast('nihao')
+          // this.ShowLoading('qing liangjie')
+        //   const _that = this
+        //  setTimeout(()=>{
+        //     _that.HideLoading('111')
+        //  },1000)
+        // this.$_qxz_show_error_text()
+        // console.log(this.qxzErrorText,this.qxzIsErrorText,'qxzIsErrorText');
+    },
     methods: {}
 }
 </script>
@@ -130,4 +142,7 @@ export default {
         margin-left: -110px;
     }
 }
+// .qxz-error-text {
+//     top: 44px;
+// }
 </style>
