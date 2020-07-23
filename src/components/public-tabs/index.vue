@@ -1,7 +1,11 @@
 <template>
     <div class="tabs">
-        <router-link v-for="item in tabListData" :key="item.path" class="item" :class="{'active':item.active}" tag="div"
-            :to="item.path">
+        <router-link v-for="item in tabListData"
+                     :key="item.path"
+                     class="item"
+                     :class="{'active':item.active}"
+                     tag="div"
+                     :to="item.path">
             <!-- <img :src="item.img"> -->
             <i class="iconfont">{{item.code}}</i>
             <span>{{item.text}}</span>
@@ -17,7 +21,7 @@ export default {
         tabListData: {
             type: Array,
             default: () => {
-                return []
+                return [];
             }
         }
     },
@@ -26,7 +30,7 @@ export default {
     },
     filters: {},
     computed: {},
-    mounted() {},
+    mounted() { },
     methods: {},
 };
 </script>

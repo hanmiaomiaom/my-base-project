@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import publicSearch from '../../components/public-search/index'
+import publicSearch from '../../components/public-search/index';
 // import
 export default {
     name: '',
@@ -18,8 +18,7 @@ export default {
             userInput: '', //用户输入数据
             placeholdertext: '请输入用户姓名/拼写',
             isShowClearIcon: false //是否显示清除的icon
-
-        }
+        };
     },
     components: { publicSearch },
     filters: {},
@@ -29,19 +28,19 @@ export default {
     methods: {
         //获取用户输入的数据
         onSearchInput(val) {
-            this.userInput = val.replace(/\s*/g, "") //// 去除 空格
+            this.userInput = val.replace(/\s*/g, ""); //// 去除 空格
             console.log(this.userInput.length, 'this.userInput.length');
             if (this.userInput.length) {
-                this.isShowClearIcon = true
+                this.isShowClearIcon = true;
             }
         },
         //清除输入框内内容
         clearValue() {
-            this.isShowClearIcon = !this.isShowClearIcon
-            this.userInput = ''
+            this.isShowClearIcon = !this.isShowClearIcon;
+            this.userInput = '';
         }
     }
-}
+};
 </script>
 
 <style type='text/scss' lang='scss' scoped>

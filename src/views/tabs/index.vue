@@ -1,5 +1,7 @@
 <template>
-    <transition appear leave-active-class="animated fadeOutRight" enter-active-class="animated fadeInRight">
+    <transition appear
+                leave-active-class="animated fadeOutRight"
+                enter-active-class="animated fadeInRight">
         <section class="tab">
             <div class="main">
                 <!-- include - 字符串或正则表达式。只有名称匹配的组件会被缓存。 -->
@@ -8,12 +10,13 @@
                 <!-- </keep-alive> -->
             </div>
             <!-- 底部导航 -->
-            <publicTabs  :tabListData="tabListData" class="bottomTabs"></publicTabs>
+            <publicTabs :tabListData="tabListData"
+                        class="bottomTabs"></publicTabs>
         </section>
     </transition>
 </template>
 <script>
-import publicTabs from '../../components/public-tabs/index'
+import publicTabs from '../../components/public-tabs/index';
 import tabImgs from '../../assets/tabs';
 export default {
     components: { publicTabs },
@@ -51,10 +54,10 @@ export default {
                     code: '\ue645'
                 },
             ],
-        }
+        };
     },
-    computed:{
-      tabListData() {
+    computed: {
+        tabListData() {
             return this.tabList.map(({ imgs, ...item }) => {
                 const active = this.$route.path.indexOf(item.path) === 0;
                 return { img: active ? imgs[1] : imgs[0], active, ...item };

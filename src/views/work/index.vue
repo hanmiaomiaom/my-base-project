@@ -8,15 +8,13 @@
 export default {
     name: '',
     data() {
-        return {
-
-        }
+        return {};
     },
     filters: {},
     computed: {},
     mounted() { },
     methods: {}
-}
+};
 </script>
 
 <style type='text/scss' lang='scss' scoped>

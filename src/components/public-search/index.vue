@@ -3,11 +3,20 @@
     <div class="search">
         <div class="search-box">
             <span class="search-icon">
-                <img src="../../assets/sousou.png" alt="">
+                <img src="../../assets/sousou.png"
+                     alt="">
             </span>
-            <input type="text" :placeholder="placeholdertext" @input="onSearchInput" v-model.trim="value">
+
+            <input type="text"
+                   :placeholder="placeholdertext"
+                   @input="onSearchInput"
+                   v-model.trim="value">
+
             <span class="clear-icon">
-                <img src="../../assets/close.png" alt="" v-show='isShowClearIcon' @click="clearValue">
+                <img src="../../assets/close.png"
+                     alt=""
+                     v-show='isShowClearIcon'
+                     @click="clearValue">
             </span>
         </div>
 
@@ -21,7 +30,7 @@ export default {
     data() {
         return {
             value: ''
-        }
+        };
     },
     props: {
         placeholdertext: {
@@ -39,7 +48,7 @@ export default {
     },
     watch: {
         userInput(newVal, oldVal) {
-            this.value = newVal
+            this.value = newVal;
         }
     },
     filters: {},
@@ -48,14 +57,14 @@ export default {
     },
     methods: {
         onSearchInput() {
-            this.$emit('onSearchInput', this.value)
+            this.$emit('onSearchInput', this.value);
         },
         // 清除输入框的内容
         clearValue() {
-            this.$emit('clearValue')
+            this.$emit('clearValue');
         }
     }
-}
+};
 </script>
 
 <style type='text/scss' lang='scss' scoped>
