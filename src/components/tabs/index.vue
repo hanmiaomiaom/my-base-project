@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs cctabs" >
+  <div class="tabs" >
     <router-link
             v-for="item in tabListData" :key="item.path"
             class="item"
@@ -66,9 +66,7 @@ export default {
             });
         },
     },
-    mounted() {
-      console.log(this.tabListData,'555');
-    },
+    mounted() {},
     methods: {},
 };
 </script>
