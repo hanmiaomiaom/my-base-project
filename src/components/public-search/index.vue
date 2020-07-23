@@ -1,5 +1,5 @@
 <template>
-<!-- 搜索组件 -->
+    <!-- 搜索组件 -->
     <div class="search">
         <div class="search-box">
             <span class="search-icon">
@@ -32,9 +32,9 @@ export default {
             type: [String, Number],
             default: ''
         },
-        isShowClearIcon:{
-          type:Boolean,
-          default:false
+        isShowClearIcon: {
+            type: Boolean,
+            default: false
         }
     },
     watch: {
@@ -51,8 +51,8 @@ export default {
             this.$emit('onSearchInput', this.value)
         },
         // 清除输入框的内容
-        clearValue(){
-          this.$emit('clearValue')
+        clearValue() {
+            this.$emit('clearValue')
         }
     }
 }
@@ -66,7 +66,7 @@ export default {
         width: 90%;
         height: 28px;
         margin: 0 auto;
-        border-radius: 4px;
+        border-radius: 50px;
         background: #fff;
         display: flex;
         > .search-icon {
@@ -82,7 +82,8 @@ export default {
             height: 100%;
             padding-left: 5px;
             padding-right: 5px;
-            color: #827f7f;
+            border-radius: 50px;
+            color: #000;
             text-overflow: ellipsis;
             > ::placeholder {
                 color: chocolate;

@@ -1,6 +1,6 @@
 <template>
     <div class="help">
-
+        <!-- 搜索框 -->
         <publicSearch :placeholdertext="placeholdertext" :isShowClearIcon="isShowClearIcon" @clearValue="clearValue"
             @onSearchInput="onSearchInput" :userInput="userInput" class="search-box">
         </publicSearch>
@@ -10,6 +10,7 @@
 
 <script>
 import publicSearch from '../../components/public-search/index'
+// import
 export default {
     name: '',
     data() {
@@ -45,12 +46,21 @@ export default {
 
 <style type='text/scss' lang='scss' scoped>
 .help {
+    width: 100%;
+    height: 100%;
+    background: #666;
     font-family: "PingFangSC-Medium";
-    position: relative;
+
     .search-box {
-        background: chocolate;
+        background: #0571b1;
+        // background: linear-gradient(to right, #0571b1, #6ea6cc); //渐变
         align-items: center;
         height: 44px;
+    }
+    .bottomTabs {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
     }
 }
 </style>

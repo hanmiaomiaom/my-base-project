@@ -3,6 +3,7 @@ import Vue from 'vue';
 import './cube-ui';
 import './common/js/WinUtil';
 import './common/scss/index.scss';
+import './common/iconfont/iconfont.css';
 import App from './App.vue';
 import router from './router';
 import store from './store';
