@@ -1,15 +1,32 @@
 <template>
     <div class="help">
         <!-- 搜索框 -->
-        <publicSearch :placeholdertext="placeholdertext" :isShowClearIcon="isShowClearIcon" @clearValue="clearValue"
-            @onSearchInput="onSearchInput" :userInput="userInput" class="search-box">
+        <publicSearch :placeholdertext="placeholdertext"
+                      :isShowClearIcon="isShowClearIcon"
+                      @clearValue="clearValue"
+                      @onSearchInput="onSearchInput"
+                      :userInput="userInput"
+                      class="search-box">
         </publicSearch>
+
+        <div class="tab-nav">
+            <!-- tabnav切换 -->
+            <publicTopTab :defaultIndex="defaultIndex"
+                          :leftText="tabArr[0]"
+                          :rightText="tabArr[1]"
+                          @clickTabs="clickTabs"></publicTopTab>
+            <todo v-if="defaultIndex===1"></todo>
+            <done v-if="defaultIndex===0"></done>
+        </div>
 
     </div>
 </template>
 
 <script>
+import todo from './todo';
+import done from './done';
 import publicSearch from '../../components/public-search/index';
+import publicTopTab from '../../components/public-topTabs/index';
 // import
 export default {
     name: '',
@@ -17,10 +34,12 @@ export default {
         return {
             userInput: '', //用户输入数据
             placeholdertext: '请输入用户姓名/拼写',
-            isShowClearIcon: false //是否显示清除的icon
+            isShowClearIcon: false,//是否显示清除的icon
+            tabArr: ['待完成', '已完成'], //头部导航栏
+            defaultIndex: 0,//默认展示哪个列表
         };
     },
-    components: { publicSearch },
+    components: { todo, done, publicSearch, publicTopTab },
     filters: {},
     computed: {},
     mounted() {
@@ -38,6 +57,10 @@ export default {
         clearValue() {
             this.isShowClearIcon = !this.isShowClearIcon;
             this.userInput = '';
+        },
+        // 展示当前点击列表
+        clickTabs(val) {
+            this.defaultIndex = val;
         }
     }
 };
@@ -47,7 +70,7 @@ export default {
 .help {
     width: 100%;
     height: 100%;
-    background: #666;
+    // background: #666;
     font-family: "PingFangSC-Medium";
 
     .search-box {
