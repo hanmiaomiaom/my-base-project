@@ -20,19 +20,19 @@ export default {
             default: 'animated fadeOutRight' // 右 → 左
         },
         zIndexC: {
-             // 多个可能的类型
+            // 多个可能的类型
             type: [String, Number],
             default: 2
         }
     },
     data() {
-        return {}
+        return {};
     },
     filters: {},
     computed: {},
     mounted() { },
     methods: {}
-}
+};
 </script>
 
 <style lang="scss" scoped>
