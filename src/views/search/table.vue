@@ -382,7 +382,9 @@ export default {
 }
 .cross {
     position: relative;
+    // border: 1px solid #ccc;
     z-index: 5;
+
 }
 table td {
     font-size: 14px;
@@ -410,7 +412,7 @@ table td {
         padding: 0 10px;
         background-color: #f3f4f6;
         font-weight: normal;
-        // border: 1px solid #fff;
+
         box-sizing: border-box;
     }
 }

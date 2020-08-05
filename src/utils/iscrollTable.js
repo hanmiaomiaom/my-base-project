@@ -69,3 +69,10 @@ export function refreshScroller() {
         }
     }, 0);
 }
+export function destroyScroller() {
+    if (scroller === null) {
+        return;
+    }
+    scroller.destroy();
+    scroller = null;
+}
