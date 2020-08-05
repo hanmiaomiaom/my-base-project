@@ -1,15 +1,18 @@
 <template>
     <div class="search">
-        search....
+        <cTable class="tables"></cTable>
     </div>
 </template>
 
 <script>
+import cTable from './table';
 export default {
     name: '',
     data() {
-        return {};
+        return {
+        };
     },
+    components: { cTable },
     filters: {},
     computed: {},
     mounted() { },
@@ -21,6 +24,9 @@ export default {
 .search {
     width: 100%;
     height: 100%;
-    background: rgb(236, 221, 221);
+    .tables {
+        height: 100%;
+        padding: 0 5px;
+    }
 }
 </style>

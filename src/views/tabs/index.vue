@@ -80,6 +80,7 @@ export default {
     }
     .bottomTabs {
         position: fixed;
+        border-top:1px solid #ccc;
         bottom: 0px;
         width: 100%;
     }
