@@ -47,99 +47,151 @@ export default {
             scroll: {
                 scroller: null
             },
+            // xList: [
+            //     [
+            //         {
+            //             field_name: "statis_date",
+            //             name: "第一行合并3行1列",
+            //             colspan: 1, //指定单元格 横向 跨越的 列数
+            //             rowspan: 3, //指定单元格 纵向 跨越的 行数
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第一行合并2列",
+            //             colspan: 2,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第一行合并2列",
+            //             colspan: 2,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第一行合并3列",
+            //             colspan: 3,
+            //             rowspan: 1,
+            //         },
+            //     ],
+            //     [
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第二行日期",
+            //             colspan: 1, //指定单元格 横向 跨越的 列数
+            //             rowspan: 1, //指定单元格 纵向 跨越的 行数
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第二行日期合并2列",
+            //             colspan: 2,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第二行日期合并2列",
+            //             colspan: 2,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "custom_field",
+            //             name: "第二行日期合并3列",
+            //             colspan: 3,
+            //             rowspan: 1,
+            //         },
+            //     ],
+            //     [
+            //         {
+            //             field_name: "area_name",
+            //             name: "第三行当月新增",
+            //             colspan: 1,  //指定单元格 横向 跨越的 列数
+            //             rowspan: 1, //指定单元格 纵向 跨越的 行数
+            //         },
+            //         {
+            //             field_name: "area_name1",
+            //             name: "第三行当月新增1",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "area_name2",
+            //             name: "第三行当月新增2",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "area_name3",
+            //             name: "第三行当月新增3",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "area_name4",
+            //             name: "第三行当月新增4",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "area_name5",
+            //             name: "第三行当月新增5",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //         {
+            //             field_name: "area_name6",
+            //             name: "第三行当月新增6",
+            //             colspan: 1,
+            //             rowspan: 1,
+            //         },
+            //     ],
+            // ],
             xList: [
                 [
                     {
                         field_name: "statis_date",
-                        name: "第一行合并3行1列",
-                        colspan: 1, //指定单元格 横向 跨越的 列数
-                        rowspan: 3, //指定单元格 纵向 跨越的 行数
-                    },
-                    {
-                        field_name: "custom_field",
-                        name: "第一行合并2列",
-                        colspan: 2,
-                        rowspan: 1,
-                    },
-                    {
-                        field_name: "custom_field",
-                        name: "第一行合并2列",
-                        colspan: 2,
-                        rowspan: 1,
-                    },
-                    {
-                        field_name: "custom_field",
-                        name: "第一行合并3列",
-                        colspan: 3,
-                        rowspan: 1,
-                    },
-                ],
-                [
-                    {
-                        field_name: "custom_field",
-                        name: "第二行日期",
-                        colspan: 1, //指定单元格 横向 跨越的 列数
+                        name: "编号",
+                        colspan: 1,  //指定单元格 横向 跨越的 列数
                         rowspan: 1, //指定单元格 纵向 跨越的 行数
                     },
                     {
-                        field_name: "custom_field",
-                        name: "第二行日期合并2列",
-                        colspan: 2,
-                        rowspan: 1,
-                    },
-                    {
-                        field_name: "custom_field",
-                        name: "第二行日期合并2列",
-                        colspan: 2,
-                        rowspan: 1,
-                    },
-                    {
-                        field_name: "custom_field",
-                        name: "第二行日期合并3列",
-                        colspan: 3,
-                        rowspan: 1,
-                    },
-                ],
-                [
-                    {
                         field_name: "area_name",
-                        name: "第三行当月新增",
+                        name: "当月新增",
                         colspan: 1,  //指定单元格 横向 跨越的 列数
                         rowspan: 1, //指定单元格 纵向 跨越的 行数
                     },
                     {
                         field_name: "area_name1",
-                        name: "第三行当月新增1",
+                        name: "当月新增1",
                         colspan: 1,
                         rowspan: 1,
                     },
                     {
                         field_name: "area_name2",
-                        name: "第三行当月新增2",
+                        name: "当月新增2",
                         colspan: 1,
                         rowspan: 1,
                     },
                     {
                         field_name: "area_name3",
-                        name: "第三行当月新增3",
+                        name: "当月新增3",
                         colspan: 1,
                         rowspan: 1,
                     },
                     {
                         field_name: "area_name4",
-                        name: "第三行当月新增4",
+                        name: "当月新增4",
                         colspan: 1,
                         rowspan: 1,
                     },
                     {
                         field_name: "area_name5",
-                        name: "第三行当月新增5",
+                        name: "当月新增5",
                         colspan: 1,
                         rowspan: 1,
                     },
                     {
                         field_name: "area_name6",
-                        name: "第三行当月新增6",
+                        name: "当月新增6",
                         colspan: 1,
                         rowspan: 1,
                     },

@@ -59,4 +59,12 @@
       bottom: 0;
       z-index: 5;
   }
-  
+//   清除浮动
+.clearfix{
+    *zoom:1;
+}
+.clearfix:after{
+content:'';
+display:block;
+clear:both;
+}
