@@ -1,6 +1,10 @@
 <template>
     <div class="work">
-        <cube-scroll ref="scroll"
+
+        <bulletinBoard :headText="headText"
+                       :swipeTextArr="swipeTextArr"
+                       @clickDetail="clickDetail"></bulletinBoard>
+        <!-- <cube-scroll ref="scroll"
                      :refreshDelay="700">
             <button @click.stop="isShowPopup=!isShowPopup">open</button>
             <div class="box">用于测试滚动时候穿透问题</div>
@@ -15,31 +19,55 @@
             <div class="pop-content">
                 <h1>你好。。。</h1>
             </div>
-        </popup>
+        </popup> -->
 
     </div>
 </template>
 
 <script>
 import popup from '../../components/public-popup/index';
+import bulletinBoard from '../../components/bulletin-board/index';
 import { log } from 'util';
 export default {
     name: '',
     data() {
         return {
             isShowPopup: false,
+            headText: '公告栏',
+            swipeTextArr: [
+                {
+                    id: 1,
+                    text: '1、这是第一条公告'
+                },
+                {
+                    id: 2,
+                    text: '2、这是第二条公告-这是第二条公告'
+                },
+                {
+                    id: 3,
+                    text: '3、这是第三条公告-这是第三条公告--这是第三条公告'
+                },
+                {
+                    id: 4,
+                    text: '4、这是第四条公告-这是第四条公告--这是第四条公告-这是第四条公告'
+                }
+            ]
         };
     },
-    components: { popup },
+    components: { bulletinBoard },
     filters: {},
     computed: {},
     mounted() {
 
     },
     methods: {
-        openPopup() {
-            this.isShowPopup = !this.isShowPopup;
+        clickDetail(val) {
+            // 将当前id传给详细信息页
+            console.log(val + '点击查看详细信息');
         }
+        // openPopup() {
+        //     this.isShowPopup = !this.isShowPopup;
+        // }
     }
 };
 </script>
@@ -48,7 +76,7 @@ export default {
 .work {
     width: 100%;
     height: 100%;
-    background: rgb(228, 208, 223);
+    // background: rgb(228, 208, 223);
     .box {
         width: 100%;
         padding: 20px 15px;
