@@ -36,7 +36,7 @@ export default {
             placeholdertext: '请输入用户姓名/拼写',
             isShowClearIcon: false,//是否显示清除的icon
             tabArr: ['待完成', '已完成'], //头部导航栏
-            defaultIndex: 0,//默认展示哪个列表
+            defaultIndex: 1,//默认展示哪个列表
         };
     },
     components: { todo, done, publicSearch, publicTopTab },

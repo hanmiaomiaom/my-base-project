@@ -1,10 +1,11 @@
 <template>
     <div>
-      todo...
+      <panel></panel>
     </div>
 </template>
 
 <script>
+import panel from '../../components/control-panel/index.vue';
 export default {
     name:'',
     data(){
@@ -12,6 +13,7 @@ export default {
 
         };
     },
+    components:{panel},
     filters:{},
     computed:{},
     mounted(){},
